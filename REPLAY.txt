@@ -1,0 +1,65 @@
+CASE five: n=5, subset_size=3
+LEFT GROUP
+  IIIII weight=0 support=()
+  XXIIX weight=3 support=(1, 2, 5)
+  IIXXX weight=3 support=(3, 4, 5)
+  XXXXI weight=4 support=(1, 2, 3, 4)
+  YYYYI weight=4 support=(1, 2, 3, 4)
+  ZZZZI weight=4 support=(1, 2, 3, 4)
+  YYZZX weight=5 support=(1, 2, 3, 4, 5)
+  ZZYYX weight=5 support=(1, 2, 3, 4, 5)
+RIGHT GROUP
+  IIIII weight=0 support=()
+  XIZXI weight=3 support=(1, 3, 4)
+  IXXYI weight=3 support=(2, 3, 4)
+  XXYZI weight=4 support=(1, 2, 3, 4)
+  YYYIX weight=4 support=(1, 2, 3, 5)
+  ZZIZX weight=4 support=(1, 2, 4, 5)
+  YZZYX weight=5 support=(1, 2, 3, 4, 5)
+  ZYXXX weight=5 support=(1, 2, 3, 4, 5)
+left reduced-rank histogram: {4: 2, 8: 8}
+right reduced-rank histogram: {4: 2, 8: 8}
+permutations preserving the cross-profile: 0
+acceptance-control permutations: 8
+exceptional-triple intersection sizes: left=1, right=2
+RESULT: reduced-rank profiles obstruct local-unitary equivalence under every qubit permutation
+CASE six: n=6, subset_size=4
+LEFT GROUP
+  IIIIII weight=0 support=()
+  XXXXII weight=4 support=(1, 2, 3, 4)
+  XXIIXX weight=4 support=(1, 2, 5, 6)
+  IIXXXX weight=4 support=(3, 4, 5, 6)
+  YYZZXI weight=5 support=(1, 2, 3, 4, 5)
+  ZZYYXI weight=5 support=(1, 2, 3, 4, 5)
+  YYYYIX weight=5 support=(1, 2, 3, 4, 6)
+  ZZZZIX weight=5 support=(1, 2, 3, 4, 6)
+RIGHT GROUP
+  IIIIII weight=0 support=()
+  XXZXII weight=4 support=(1, 2, 3, 4)
+  YYYZII weight=4 support=(1, 2, 3, 4)
+  ZZXYII weight=4 support=(1, 2, 3, 4)
+  YXXIXX weight=5 support=(1, 2, 3, 5, 6)
+  XYIYXX weight=5 support=(1, 2, 4, 5, 6)
+  ZIYXXX weight=5 support=(1, 3, 4, 5, 6)
+  IZZZXX weight=5 support=(2, 3, 4, 5, 6)
+left reduced-rank histogram: {8: 3, 16: 12}
+right reduced-rank histogram: {4: 1, 16: 14}
+permutations preserving the cross-profile: 0
+acceptance-control permutations: 48
+RESULT: reduced-rank profiles obstruct local-unitary equivalence under every qubit permutation
+five_left: {4: 2, 8: 8}
+  exceptional subsets: [((1, 2, 5), 4), ((3, 4, 5), 4)]
+five_right: {4: 2, 8: 8}
+  exceptional subsets: [((1, 3, 4), 4), ((2, 3, 4), 4)]
+six_left: {8: 3, 16: 12}
+  exceptional subsets: [((1, 2, 3, 4), 8), ((1, 2, 5, 6), 8), ((3, 4, 5, 6), 8)]
+six_right: {4: 1, 16: 14}
+  exceptional subsets: [((1, 2, 3, 4), 4)]
+acceptance control: exact matrix audit accepted a reversed-qubit copy
+RESULT: independent exact matrix ranks reproduce both local-unitary obstructions
+Python 3.14.3
+Darwin 25.6.0 arm64
+README copy: exact
+PROOF copy: exact
+support verifier copy: exact
+matrix verifier copy: exact
