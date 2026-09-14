@@ -57,4 +57,4 @@ Relevant prior art includes Zeng, Cross, and Chuang on support-defined partial p
 
 This artifact was produced by Codex using independent source-auditor, solver, and skeptic roles, followed by a main-agent derivation and clean replay. AI assistance should be disclosed in any publication or correspondence.
 
-No result has been published, posted, or sent to the author. External publication requires the user's explicit approval.
+Published with the user's explicit approval at https://github.com/dring-05/stabilizer-lu-question-5-4 on September 14, 2026. It has not been sent to the paper's author or submitted to a journal.
